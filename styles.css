@@ -1,0 +1,118 @@
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling when the chat is open */
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+#toggle-chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    
+    height: 60px;
+    background-color: #a5a5a5;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+#toggle-chat-container:hover {
+    background-color: #45a049;
+}
+
+#toggle-chat-container img {
+    width: 40px;
+    height: 40px;
+}
+
+#chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    z-index: 9998;
+    transition: all 0.3s ease;
+}
+
+#close-button {
+    cursor: pointer;
+    padding: 5px;
+    background-color: #eee;
+    text-align: center;
+}
+
+#chat-box {
+    flex: 1;
+    overflow-y: scroll;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.message {
+    padding: 8px 12px;
+    margin: 4px;
+    border-radius: 10px;
+}
+
+.user {
+    background-color: #DCF8C6;
+    text-align: right;
+}
+
+.bot {
+    background-color: #E2E2E2;
+    text-align: left;
+}
+
+#user-input-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#user-input {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-top: 1px solid #ccc;
+    border-radius: 0 0 10px 0;
+    transition: width 0.3s ease;
+}
+
+#send-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+}
+
+#send-button:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Simple Chatbot</title>
+</head>
+<body>
+
+    <video autoplay loop muted src="https://www.sciastra.com/Assets/newAssets/rocketNew.mp4" ></video>
+
+    <div id="toggle-chat-container" onclick="toggleChat()">
+        <img src="chat-bubble.png" alt="Message Icon">
+    </div>
+
+    <div id="chat-container" style="display: none;">
+        <div id="close-button" onclick="closeChat()">X</div>
+        <div id="chat-box"></div>
+        <div id="user-input-container">
+            <input type="text" id="user-input" placeholder="Type your question...">
+            <button id="send-button" onclick="processUserInput()">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
